@@ -6,6 +6,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -48,7 +54,7 @@
 				<article id="work">
 					<h2 class="major">Trabajos</h2>
 					
-					<!-- CSS para el slider de imágenes -->
+					<!-- CSS para el slider de imÃ¡genes -->
 					<style>
 						* {
 							box-sizing: border-box;
@@ -82,7 +88,7 @@
 						.slides {
 							display: flex;
 							transition: transform 0.8s ease;
-							height: 100%; /* Asegura que las imágenes ocupen el 100% de la altura del slider */
+							height: 100%; /* Asegura que las imÃ¡genes ocupen el 100% de la altura del slider */
 							width: 100%;
 						}
 
@@ -100,7 +106,7 @@
 							object-fit: cover; /* Esto asegura que la imagen cubra todo el espacio sin deformarse */
 						}
 
-						/* Las siguientes imágenes pueden ser más pequeñas */
+						/* Las siguientes imÃ¡genes pueden ser mÃ¡s pequeÃ±as */
 						.slide img {
 							width: 100%;
 							height: auto;
@@ -173,7 +179,7 @@
 						}
 					</style>
 
-					<!-- Slider de Imágenes -->
+					<!-- Slider de ImÃ¡genes -->
 					<div class="container">
 						<div class="slider" id="slider">
 							<div class="slides" id="slides"></div>
@@ -192,7 +198,7 @@
 						let isDragging = false;
 						let slideInterval;
 
-						// Generar dinámicamente las imágenes
+						// Generar dinÃ¡micamente las imÃ¡genes
 						for (let i = 1; i <= totalImages; i++) {
 							const slide = document.createElement('div');
 							slide.className = 'slide';
@@ -229,7 +235,7 @@
 							});
 						});
 
-						// Swipe móvil
+						// Swipe mÃ³vil
 						slidesContainer.addEventListener('touchstart', (e) => {
 							startX = e.touches[0].clientX;
 							isDragging = true;
@@ -310,12 +316,7 @@
 		<!-- BG -->
 		<div id="bg"></div>
 
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
+		
 
 	</body>
 </html>
